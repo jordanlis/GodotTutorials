@@ -22,7 +22,7 @@ func showItems(data):
 	items.visible = false
 	for item in data.keys():
 		var item_copy = items.duplicate()
-		var entity : Dictionary = data[item]
+		var entity : Array = data[item]
 		item_copy.text = str(entity[0]) + " " + str(entity[1]) + " " + str(entity[2]) + " " + str(entity[3])
 		item_copy.visible = true
 		$VBox.add_child(item_copy)
